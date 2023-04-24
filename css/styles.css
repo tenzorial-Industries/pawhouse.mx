@@ -1,0 +1,638 @@
+:root {
+  /* Main Color Palette */
+  --white: #eceff4;
+  --darkBlue: #2e3440;
+  --lightBlue: #81a1c1;
+  --blueishGreen: #88c0d0;
+
+  /* Social Media Color Palette */
+  --whatsappGreen: #95c4c4;
+  --whatsappBlue: #5e81ac;
+
+  --instagramPurple: #4b56ca;
+  --instagramPink: #cb2770;
+
+  --facebookBlue: #305bf2;
+  --facebookLightBlue: #96bff2;
+
+  /* Fonts */
+  --mainFont: "M PLUS Rounded 1c";
+  --mainWeight: 800;
+}
+
+* {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--mainFont);
+  font-weight: var(--mainWeight);
+}
+
+h1 {
+  font-size: 200px;
+  width: 80%;
+  font-family: "Caveat";
+}
+
+h2 {
+  font-size: 42px;
+  padding: 20px 0 0 0;
+}
+
+h3 {
+  font-size: 36px;
+  padding: 20px;
+}
+
+p {
+  font-size: 32px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: var(--darkBlue);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 100px 0 100px;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--darkBlue);
+  position: relative;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  margin-right: 20px;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* /////// */
+/* BUTTONS */
+/* /////// */
+
+/* Contact Us */
+.contactButton {
+  height: 40px;
+  width: 140px;
+  border-radius: 100px;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--whatsappGreen),
+    var(--whatsappBlue)
+  );
+
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 12;
+  transition: all 400ms ease;
+  margin-left: 24px;
+  padding: 4px;
+}
+
+.contactButton:hover {
+  transition: all 400ms ease;
+  background-position: left;
+  background-size: 400%;
+  box-shadow: 0 0 20px var(--lightBlue);
+  transform: scale(1.1);
+}
+
+.contactTextNavButton {
+  display: block;
+}
+
+/* Whatsapp */
+.whatsNavButton {
+  height: 40px;
+  width: 140px;
+  border-radius: 100px;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--whatsappGreen),
+    var(--whatsappBlue)
+  );
+
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 12;
+  transition: all 400ms ease;
+  margin-left: 24px;
+  padding: 4px;
+}
+
+.whatsNavButton:hover {
+  transition: all 400ms ease;
+  background-position: left;
+  background-size: 400%;
+  box-shadow: 0 0 20px var(--lightBlue);
+  transform: scale(1.1);
+}
+
+.whatsTextNavButton {
+  display: block;
+}
+
+/* Whatsapp */
+.whatsButton {
+  height: 40px;
+  width: 140px;
+  border-radius: 100px;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--whatsappBlue),
+    var(--whatsappGreen)
+  );
+
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 12;
+  transition: all 400ms ease;
+  padding: 4px;
+}
+
+.whatsButton:hover {
+  transition: all 400ms ease;
+  background-position: left;
+  background-size: 400%;
+  box-shadow: 0 0 20px var(--whatsappGreen);
+  transform: scale(1.1);
+}
+
+/* Instagram */
+.instaButton {
+  height: 40px;
+  width: 140px;
+  border-radius: 100px;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--instagramPink),
+    var(--instagramPurple)
+  );
+
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 12;
+  transition: all 400ms ease;
+  padding: 4px;
+}
+
+.instaButton:hover {
+  transition: all 400ms ease;
+  background-position: left;
+  background-size: 400%;
+  box-shadow: 0 0 20px var(--instagramPink);
+  transform: scale(1.1);
+}
+
+/* Facebook */
+.faceButton {
+  height: 40px;
+  width: 140px;
+  border-radius: 100px;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--facebookBlue),
+    var(--facebookLightBlue)
+  );
+
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 12;
+  transition: all 400ms ease;
+  padding: 4px;
+}
+
+.faceButton:hover {
+  transition: all 400ms ease;
+  background-position: left;
+  background-size: 400%;
+  box-shadow: 0 0 20px var(--facebookBlue);
+  transform: scale(1.1);
+}
+
+/* //////// */
+/* SECTIONS */
+/* //////// */
+
+/* Landing */
+.landingSection {
+  overflow: hidden;
+  width: 100%;
+  height: 750px;
+  background-color: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100px);
+}
+
+.landingSectionLeft {
+  margin: auto 120px;
+  z-index: 1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+#landingTitle {
+  color: var(--darkBlue);
+}
+
+#landingParagraph {
+  color: var(--darkBlue);
+}
+
+.landingSectionRight {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-left: 1000px;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+#dogSleeping {
+  position: relative;
+  left: 100px;
+  width: 3000px;
+  height: 750px;
+  display: block;
+}
+
+/* Objectives */
+.objectivesSection {
+  overflow: hidden;
+  background-image: url(/assets/images/objectiveSectionBackground.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 850px;
+  height: 750px;
+  width: 100%;
+}
+
+.objectivesRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.singleObjective {
+  padding: 0 90px 30px 90px;
+}
+
+#objectivesPhotoLeft {
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  border: 30px solid var(--darkBlue);
+}
+
+#objectivesPhotoRight {
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  border: 30px solid var(--lightBlue);
+}
+
+/* Contact Us */
+.contactUsSection {
+  overflow: hidden;
+  background-image: url(/assets/images/ContactUsSection.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: absolute;
+  height: auto;
+  top: 1600px;
+}
+
+.contactUsRow {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contactUsTitle {
+  margin: 20px 0;
+}
+
+.contactUsParagraph {
+  margin-bottom: 30px;
+  padding: 0 20%;
+}
+
+.footerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  top: 2050px;
+}
+
+#footerLogo {
+  width: 200px;
+  height: 200px;
+}
+
+/** -- Phone Mode -- */
+@media (max-width: 580px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  /* /////// */
+  /* BUTTONS */
+  /* /////// */
+
+  /* Contact Us */
+  .contactButton {
+    height: 24px;
+    width: 100px;
+    border-radius: 100px;
+
+    background-image: linear-gradient(
+      45deg,
+      var(--whatsappGreen),
+      var(--whatsappBlue)
+    );
+
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 12;
+    transition: all 400ms ease;
+    margin-left: 24px;
+    padding: 4px;
+  }
+
+  .contactButton:hover {
+    transition: all 400ms ease;
+    background-position: left;
+    background-size: 400%;
+    box-shadow: 0 0 20px var(--lightBlue);
+    transform: scale(1.1);
+  }
+
+  .contactTextButton {
+    font-size: 10px;
+  }
+
+  .whatsButton {
+    height: 24px;
+    width: 100px;
+    border-radius: 100px;
+
+    background-image: linear-gradient(
+      45deg,
+      var(--whatsappGreen),
+      var(--whatsappBlue)
+    );
+
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 12;
+    transition: all 400ms ease;
+    margin-left: 24px;
+    padding: 4px;
+  }
+
+  .whatsButton:hover {
+    transition: all 400ms ease;
+    background-position: left;
+    background-size: 400%;
+    box-shadow: 0 0 20px var(--lightBlue);
+    transform: scale(1.1);
+  }
+
+  .whatsTextButton {
+    font-size: 10px;
+  }
+  .instaButton {
+    height: 24px;
+    width: 100px;
+    border-radius: 100px;
+
+    background-image: linear-gradient(
+      45deg,
+      var(--instagramPink),
+      var(--instagramPurple)
+    );
+
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 12;
+    transition: all 400ms ease;
+    margin-left: 24px;
+    padding: 4px;
+  }
+
+  .instaButton:hover {
+    transition: all 400ms ease;
+    background-position: left;
+    background-size: 400%;
+    box-shadow: 0 0 20px var(--instagramPurple);
+    transform: scale(1.1);
+  }
+
+  .instaTextButton {
+    font-size: 10px;
+  }
+
+  .faceButton {
+    height: 24px;
+    width: 100px;
+    border-radius: 100px;
+
+    background-image: linear-gradient(
+      45deg,
+      var(--facebookBlue),
+      var(--facebookLightBlue)
+    );
+
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 12;
+    transition: all 400ms ease;
+    margin-left: 24px;
+    padding: 4px;
+  }
+
+  .faceButton:hover {
+    transition: all 400ms ease;
+    background-position: left;
+    background-size: 400%;
+    box-shadow: 0 0 20px var(--lightBlue);
+    transform: scale(1.1);
+  }
+
+  .faceTextButton {
+    font-size: 10px;
+  }
+
+  /* whatsapp */
+  .whatsTextNavButton {
+    display: none;
+  }
+
+  .whatsNavButton {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+  }
+
+  /* //////// */
+  /* SECTIONS */
+  /* //////// */
+
+  /* Nav Bar */
+  nav {
+    padding: 0 32px 0 32px;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+  }
+
+  /* Landing */
+  .landingSection {
+    height: 240px;
+  }
+  .landingSectionLeft {
+    margin: auto 20px;
+  }
+
+  #landingParagraph {
+    width: 80%;
+  }
+
+  #dogSleeping {
+    margin: auto 0;
+    position: relative;
+    left: 20px;
+    width: 250px;
+    height: 190px;
+    display: block;
+  }
+
+  /* Objectives */
+  .objectivesSection {
+    overflow: hidden;
+    background-image: url(/assets/images/objectiveSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    height: 360px;
+    width: 100%;
+  }
+
+  .objectivesRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .singleObjective {
+    padding: 2px 20px 26px 20px;
+  }
+
+  #objectivesPhotoLeft {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 12px solid var(--darkBlue);
+  }
+
+  #objectivesPhotoRight {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 12px solid var(--lightBlue);
+  }
+/* Contact Us */
+  .contactUsSection {
+    padding: 30px 20px;
+    position: absolute;
+    top: 700px;
+    height: 360px;
+    width: 89.75%;
+  }
+
+  .contactUsParagraph {
+    margin-bottom: 30px;
+    padding: 0 20%;
+  }
+
+  /* Footer */
+  .footerSection {
+    top: 1125px;
+  }
+}
